@@ -291,6 +291,65 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bd8439cd6f812d54e967e192bb2376ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &888337648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+  m_PrefabInternal: {fileID: 1790687517}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 888337650}
+  - 114: {fileID: 888337649}
+  m_Layer: 0
+  m_Name: Wind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &888337649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1790687517}
+  m_GameObject: {fileID: 888337648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1052d6e3d224e0745bf3bd4003f5781e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windZone:
+    zoneHight: 10.2299995
+    speedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 10
+      - time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+  emiter:
+    particle: {fileID: 0}
+--- !u!4 &888337650
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+  m_PrefabInternal: {fileID: 1790687517}
+  m_GameObject: {fileID: 888337648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.439999998, y: 5.23000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
 --- !u!1 &1071726630
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +1041,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1001 &1790687517
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.439999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.23000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.topExtent
+      value: 13.7700005
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.botomExtent
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.zoneHight
+      value: 10.2299995
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[0].inSlope
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[0].outSlope
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[0].tangentMode
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[1].inSlope
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[1].outSlope
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: windZone.speedCurve.m_Curve.Array.data[1].tangentMode
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+  m_RootGameObject: {fileID: 888337648}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!4 &1793890265
 Transform:
   m_ObjectHideFlags: 0
