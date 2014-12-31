@@ -17,15 +17,18 @@ public class BaloonCamera : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		balloon  =  GameObject.FindGameObjectWithTag("Player").transform;
+
 		xOffset = transform.position.x - balloon.position.x;
 		yOffset = transform.position.y - balloon.position.y;
 	}
 	
 	// Update is called once per frame
-	void LateUpdate () {
+	void FixedUpdate () {
 		yClamp = Mathf.Clamp(balloon.position.y + yOffset,bottomLimit,1000f);
 		//transform.position = new Vector3(balloon.position.x + xOffset, yClamp , -10f);
-		transform.position = Vector3.Lerp(transform.position,new Vector3(balloon.position.x + xOffset, yClamp , -10f),lazy * Time.deltaTime);
+		transform.position = Vector3.Lerp(transform.position,new Vector3(balloon.position.x + xOffset, yClamp , -10f),lazy);
 	}
 }
 
