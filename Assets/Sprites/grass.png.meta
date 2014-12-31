@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: 33879638f8476a94dad78a5ec7a8315e
+guid: 9eb34e445a22a5945ab6dd785938a553
 TextureImporter:
   fileIDToRecycleName:
-    21300000: grass_2
-    21300002: grass_3
-    21300004: grass_5
-    21300006: grass_6
-    21300008: grass_7
-    21300010: grass_8
+    21300000: grass_0
+    21300002: grass_1
+    21300004: grass_2
+    21300006: grass_3
+    21300008: grass_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,65 +48,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
+    - name: grass_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 189
+        width: 84
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 189
+        width: 145
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: grass_2
       rect:
         serializedVersion: 2
-        x: 134
-        y: 190
-        width: 113
-        height: 57
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 267
+        y: 184
+        width: 138
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: grass_3
       rect:
         serializedVersion: 2
-        x: 21
-        y: 191
-        width: 98
-        height: 54
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 40
+        y: 122
+        width: 92
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_5
+    - name: grass_4
       rect:
         serializedVersion: 2
-        x: 267
-        y: 189
-        width: 145
+        x: 236
+        y: 123
+        width: 156
         height: 31
-      alignment: 7
-      pivot: {x: .5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_6
-      rect:
-        serializedVersion: 2
-        x: 20
-        y: 130
-        width: 158
-        height: 31
-      alignment: 7
-      pivot: {x: .5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_7
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 97
-        width: 139
-        height: 35
-      alignment: 7
-      pivot: {x: .5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_8
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 41
-        width: 125
-        height: 49
-      alignment: 7
-      pivot: {x: .5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
