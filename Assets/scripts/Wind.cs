@@ -4,23 +4,31 @@ using System.Collections;
 public class Wind : MonoBehaviour {
 
 	public WindZone windZone;
+	public FlightInfo flightInfo;
 
-	public ParticleEmiter2D emiter;
+	public Transform balloon;
 
 	void OnDrawGizmos () {
 		Gizmos.DrawIcon(transform.position,"wind_blowing_cloud.png", true);
 		Gizmos.color = Color.blue;
-		Gizmos.DrawCube(transform.position, new Vector3(.25f, windZone.zoneHight, 0f));
+		Gizmos.DrawCube(transform.position, new Vector3(.5f, windZone.zoneHight, 0f));
 	}
 
-	// Use this for initialization
+
 	void Start () {
-	
+		windZone.bottom =  transform.position.y - (windZone.zoneHight/2);
+		windZone.top = transform.position.y + (windZone.zoneHight/2);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void Update (){
+		flightInfo.alt = balloon.position.y;
+		flightInfo.altPercent = (flightInfo.alt - windZone.bottom)/windZone.zoneHight;
+	}
+
+	void FixedUpdate () {
+		if(flightInfo.altPercent > 0){
+		balloon.rigidbody2D.AddForce(new Vector2(windZone.speedCurve.Evaluate(flightInfo.altPercent),0f));
+		}
 	}
 }
 
@@ -28,10 +36,13 @@ public class Wind : MonoBehaviour {
 [System.Serializable]
 public class WindZone{
 	public float zoneHight;
+	public float bottom;
+	public float top;
 	public AnimationCurve speedCurve;
 }
 
 [System.Serializable]
-public class ParticleEmiter2D {
-	public GameObject particle;
+public class FlightInfo {
+	public float alt;
+	public float altPercent;
 }
