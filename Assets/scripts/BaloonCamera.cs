@@ -9,6 +9,8 @@ public class BaloonCamera : MonoBehaviour {
 
 	public float xOffset;
 
+	public float lazy = .1f;
+
 	public float yOffset;
 
 	private float yClamp;
@@ -22,7 +24,8 @@ public class BaloonCamera : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
 		yClamp = Mathf.Clamp(balloon.position.y + yOffset,bottomLimit,1000f);
-		transform.position = new Vector3(balloon.position.x + xOffset, yClamp , -10f);
+		//transform.position = new Vector3(balloon.position.x + xOffset, yClamp , -10f);
+		transform.position = Vector3.Lerp(transform.position,new Vector3(balloon.position.x + xOffset, yClamp , -10f),lazy * Time.deltaTime);
 	}
 }
 
