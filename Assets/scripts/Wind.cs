@@ -18,6 +18,7 @@ public class Wind : MonoBehaviour {
 	void Start () {
 		windZone.bottom =  transform.position.y - (windZone.zoneHight/2);
 		windZone.top = transform.position.y + (windZone.zoneHight/2);
+		balloon = GameObject.FindGameObjectWithTag("Player").transform;
 	}
 
 	void Update (){
