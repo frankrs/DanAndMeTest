@@ -398,7 +398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: faf28c4359bd9764196552225f49cc07, type: 2}
       propertyPath: motor.gasPower
-      value: 7500
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: faf28c4359bd9764196552225f49cc07, type: 2}
       propertyPath: m_Mass
@@ -406,11 +406,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: faf28c4359bd9764196552225f49cc07, type: 2}
       propertyPath: m_GravityScale
-      value: .5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: faf28c4359bd9764196552225f49cc07, type: 2}
       propertyPath: m_LinearDrag
-      value: .5
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: faf28c4359bd9764196552225f49cc07, type: 2}
+      propertyPath: m_FixedAngle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: faf28c4359bd9764196552225f49cc07, type: 2}
@@ -567,7 +571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: ef3e9333722c07345a53fadb0946be60, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef3e9333722c07345a53fadb0946be60, type: 2}
@@ -1412,11 +1416,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[0].inSlope
-      value: 2001.88879
+      value: 1000.94446
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[0].outSlope
-      value: 2001.88879
+      value: 1000.94446
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[0].tangentMode
@@ -1428,15 +1432,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[1].value
-      value: 2001.88879
+      value: 1000.94446
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[1].inSlope
-      value: 2001.88879
+      value: 1000.94446
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[1].outSlope
-      value: 2001.88879
+      value: 1000.94446
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
       propertyPath: windZone.speedCurve.m_Curve.Array.data[1].tangentMode
@@ -1660,13 +1664,13 @@ MonoBehaviour:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 2001.88879
-        outSlope: 2001.88879
+        inSlope: 1000.94446
+        outSlope: 1000.94446
         tangentMode: 10
       - time: 1
-        value: 2001.88879
-        inSlope: 2001.88879
-        outSlope: 2001.88879
+        value: 1000.94446
+        inSlope: 1000.94446
+        outSlope: 1000.94446
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -1701,7 +1705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &966076089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1979,7 +1983,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 42.1699982
+  orthographic size: 42
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2016,9 +2020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   balloon: {fileID: 1128897004}
   bottomLimit: 3.5
-  xOffset: 0
   lazy: .0399999991
-  yOffset: 0
+  startSize: 0
+  sizeLimit: 95
 --- !u!1 &1105801528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,7 +2123,7 @@ MonoBehaviour:
   controls:
     gasOn: 0
   motor:
-    gasPower: 7500
+    gasPower: 2500
 --- !u!60 &1128897001
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2361,9 +2365,9 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 162178511}
   m_GameObject: {fileID: 1128896998}
   m_Mass: 100
-  m_LinearDrag: .5
+  m_LinearDrag: .100000001
   m_AngularDrag: .5
-  m_GravityScale: .5
+  m_GravityScale: 1
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
