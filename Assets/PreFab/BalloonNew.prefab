@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.30999994, y: 1.65999997, z: 0}
-  m_LocalScale: {x: .161501691, y: .161501691, z: .161501691}
+  m_LocalPosition: {x: 102, y: 30, z: 0}
+  m_LocalScale: {x: 1.44636631, y: 1.44636631, z: 1.44636631}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -38,10 +38,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: .5
+  m_Mass: 100
   m_LinearDrag: .5
   m_AngularDrag: .5
-  m_GravityScale: .100000001
+  m_GravityScale: .699999988
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -305,7 +305,7 @@ MonoBehaviour:
   controls:
     gasOn: 0
   motor:
-    gasPower: 1.5
+    gasPower: 2500
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
