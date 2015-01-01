@@ -4,7 +4,7 @@ using System.Collections;
 public class Wind : MonoBehaviour {
 
 	public WindZone windZone;
-	public FlightInfo flightInfo;
+	public float altPercent;
 
 	public Transform balloon;
 
@@ -21,13 +21,12 @@ public class Wind : MonoBehaviour {
 	}
 
 	void Update (){
-		flightInfo.alt = balloon.position.y;
-		flightInfo.altPercent = (flightInfo.alt - windZone.bottom)/windZone.zoneHight;
+		altPercent = (FlightInfo.altitude - windZone.bottom)/windZone.zoneHight;
 	}
 
 	void FixedUpdate () {
-		if(flightInfo.altPercent > 0){
-		balloon.rigidbody2D.AddForce(new Vector2(windZone.speedCurve.Evaluate(flightInfo.altPercent),0f));
+		if(altPercent > 0){
+		balloon.rigidbody2D.AddForce(new Vector2(windZone.speedCurve.Evaluate(altPercent),0f));
 		}
 	}
 }
@@ -41,8 +40,3 @@ public class WindZone{
 	public AnimationCurve speedCurve;
 }
 
-[System.Serializable]
-public class FlightInfo {
-	public float alt;
-	public float altPercent;
-}
