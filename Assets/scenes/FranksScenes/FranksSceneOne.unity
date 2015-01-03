@@ -560,7 +560,7 @@ GameObject:
   - 114: {fileID: 260294066}
   m_Layer: 0
   m_Name: Wind
-  m_TagString: Untagged
+  m_TagString: Wind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1815,6 +1815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bMotor: {fileID: 1501039882}
+  cheat: 0
 --- !u!114 &1501039882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2257,10 @@ Prefab:
       propertyPath: windZone.speedCurve.m_Curve.Array.data[1].tangentMode
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
+      propertyPath: m_TagString
+      value: Wind
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1a59c4fd39dc0b4fa397498559001bb, type: 2}
   m_RootGameObject: {fileID: 260294065}
@@ -2469,7 +2474,7 @@ MonoBehaviour:
   bottomLimit: 3.5
   lazy: .0399999991
   startSize: 0
-  sizeLimit: 150
+  sizeLimit: 600
   rightShiftComp: 0
   rightShiftCompMax: 150
 --- !u!81 &1780801282
