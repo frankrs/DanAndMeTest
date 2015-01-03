@@ -4,6 +4,7 @@ using System.Collections;
 public class PCControls : MonoBehaviour {
 
 	public BaloonMotor bMotor;
+	public bool cheat = false;
 
 	// Use this for initialization
 	void Start () {
@@ -14,5 +15,14 @@ public class PCControls : MonoBehaviour {
 	void Update () {
 		bMotor.controls.gasOn = Input.GetButton("Gas");
 		bMotor.controls.bomb = Input.GetButtonDown("Bomb");
+
+
+
+		if(Input.GetKeyDown("p")){
+			FlightInfo.fuel = 100f;
+		}
+
 	}
 }
+
+

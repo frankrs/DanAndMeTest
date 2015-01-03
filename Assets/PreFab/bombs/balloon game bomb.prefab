@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   - 50: {fileID: 5000000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: balloon game bomb
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 98.8000031, y: -24.8600006, z: 0}
+  m_LocalPosition: {x: 105.920853, y: -33.8644104, z: 0}
   m_LocalScale: {x: .636981189, y: .636981189, z: .636981189}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37,7 +38,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mass: 30
-  m_LinearDrag: 0
+  m_LinearDrag: .5
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -234,6 +235,18 @@ PolygonCollider2D:
       - {x: -9.55321026, y: -4.00549364}
       - {x: -9.31759262, y: -3.91981483}
       - {x: -8.73925972, y: -3.76987648}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d4639a2897fcf44acb0148ecf32cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  com: {x: 8.22000027, y: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
