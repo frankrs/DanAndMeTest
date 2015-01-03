@@ -39,7 +39,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mass: 75
-  m_LinearDrag: .100000001
+  m_LinearDrag: .300000012
   m_AngularDrag: .5
   m_GravityScale: .5
   m_FixedAngle: 1
@@ -304,8 +304,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls:
     gasOn: 0
+    bomb: 0
   motor:
-    gasPower: 2000
+    gasPower: 1500
+    burnRate: 20
+  bombBay:
+    loadedBomb: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

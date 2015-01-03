@@ -12,6 +12,7 @@ public class PCControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		bMotor.controls.gasOn = Input.GetKey("space");
+		bMotor.controls.gasOn = Input.GetButton("Gas");
+		bMotor.controls.bomb = Input.GetButtonDown("Bomb");
 	}
 }
