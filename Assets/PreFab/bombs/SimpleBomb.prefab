@@ -13,7 +13,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: balloon game bomb
+  m_Name: SimpleBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.920853, y: -33.8644104, z: 0}
-  m_LocalScale: {x: .636981189, y: .636981189, z: .636981189}
+  m_LocalPosition: {x: 67.5999985, y: -47, z: 0}
+  m_LocalScale: {x: .531946957, y: .531946957, z: .531946957}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -37,13 +37,9 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 30
+  m_Mass: 20
   m_LinearDrag: .5
-<<<<<<< HEAD
-  m_AngularDrag: .5
-=======
   m_AngularDrag: .0500000007
->>>>>>> c4b600a99c98e787c1347656aafe0f0607f5ec86
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -250,7 +246,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0d4639a2897fcf44acb0148ecf32cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  com: {x: 8.22000027, y: 0}
+  com: {x: 5.3499999, y: 0}
+  windZone:
+    zoneHight: 0
+    bottom: 0
+    top: 0
+    speedCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -270,7 +275,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: c3fef809cec4d604eb1c384d2f90c727, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
