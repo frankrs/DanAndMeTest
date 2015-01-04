@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 45c4030d1fde7424bb3041e4a244e21c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: treeset-1_0
+    21300002: treeset-1_1
+    21300004: treeset-1_2
+    21300006: treeset-1_3
+    21300008: treeset-1_4
+    21300010: treeset-1_5
+    21300012: treeset-1_6
+    21300014: treeset-1_7
+    21300016: treeset-1_8
+    21300018: treeset-1_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: treeset-1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 896
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 767
+        width: 165
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_2
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 746
+        width: 184
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 829
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 450
+        width: 200
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 509
+        width: 153
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 456
+        width: 189
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_7
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 237
+        width: 150
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_8
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 238
+        width: 148
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: treeset-1_9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 251
+        width: 109
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
