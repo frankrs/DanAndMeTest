@@ -8,6 +8,11 @@ public class Bomb : MonoBehaviour {
 	private float altPercent;
 	public GameObject fin;
 	private GameObject thisFin;
+	public GameObject explosion;
+	public LayerMask layerMask;
+	public float blastRadius;
+	public float blastPower;
+	//private Collider2D[] targets;
 
 	void OnDrawGizmos(){
 		Gizmos.DrawSphere(transform.TransformPoint(com), 1);
@@ -31,5 +36,27 @@ public class Bomb : MonoBehaviour {
 		if(altPercent > 0){
 			rigidbody2D.AddForce(new Vector2((windZone.speedCurve.Evaluate(altPercent)*.5f),0f));
 		}
+	}
+
+	void OnCollisionEnter2D(Collision2D col){
+		// get point of impact
+		var impact = col.contacts[0].point;
+		// draw expolsion
+		var explode = GameObject.Instantiate(explosion,impact,Quaternion.identity) as GameObject;
+		// get targets hit
+		Collider2D[] targets = Physics2D.OverlapCircleAll(impact,blastRadius);
+		// add blast force
+		if (targets != null){
+			foreach(Collider2D c in targets){
+				// check if has rigidbody
+				if(c.rigidbody2D){
+					// add blast
+					c.rigidbody2D.AddForceAtPosition(new Vector2(blastPower,blastPower),impact,ForceMode2D.Impulse);
+				}
+			}
+		}
+		// destroy left over
+		Destroy(thisFin);
+		Destroy(gameObject);
 	}
 }
