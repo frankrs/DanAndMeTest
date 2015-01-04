@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bMotor: {fileID: 11400002}
+  cheat: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,7 +310,7 @@ MonoBehaviour:
     gasPower: 1500
     burnRate: 20
   bombBay:
-    loadedBomb: {fileID: 0}
+    loadedBomb: {fileID: 100000, guid: e81577883612f5646a865fa91aaf828f, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
