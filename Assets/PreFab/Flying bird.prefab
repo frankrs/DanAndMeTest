@@ -12,7 +12,7 @@ GameObject:
   - 95: {fileID: 9571332}
   - 60: {fileID: 6099644}
   m_Layer: 0
-  m_Name: Flying Bird
+  m_Name: Flying bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
