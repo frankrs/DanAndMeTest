@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 772611e5437e271488295658fba5dbab
+guid: d2a1ec8da5f667041b7da7feddac36a4
 TextureImporter:
   fileIDToRecycleName:
     21300000: birds_0
     21300002: birds_1
     21300004: birds_2
     21300006: birds_3
+    21300008: birds_4
+    21300010: birds_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,42 +52,52 @@ TextureImporter:
     - name: birds_0
       rect:
         serializedVersion: 2
-        x: 559
-        y: 929
+        x: 61
+        y: 1329
         width: 447
-        height: 294
+        height: 304
       alignment: 9
-      pivot: {x: .483113468, y: .865857601}
+      pivot: {x: .256908715, y: .863081694}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: birds_1
       rect:
         serializedVersion: 2
-        x: 568
-        y: 524
-        width: 439
-        height: 358
+        x: 77
+        y: 926
+        width: 440
+        height: 359
       alignment: 9
-      pivot: {x: .444119036, y: .695030689}
+      pivot: {x: .150530457, y: .734147549}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: birds_2
       rect:
         serializedVersion: 2
-        x: 574
-        y: 324
+        x: 41
+        y: 636
+        width: 502
+        height: 180
+      alignment: 9
+      pivot: {x: .263121694, y: .864482939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: birds_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 299
         width: 450
         height: 175
       alignment: 9
-      pivot: {x: .466452509, y: .327469647}
+      pivot: {x: .144628569, y: .476568788}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: birds_3
+    - name: birds_5
       rect:
         serializedVersion: 2
-        x: 564
-        y: 38
-        width: 456
-        height: 261
+        x: 69
+        y: 13
+        width: 457
+        height: 260
       alignment: 9
-      pivot: {x: .483447015, y: .218026578}
+      pivot: {x: .132126689, y: .247665346}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
