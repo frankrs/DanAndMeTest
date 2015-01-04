@@ -4,9 +4,10 @@ using System.Collections;
 public class Bomb : MonoBehaviour {
 
 	public Vector2 com;
-	public WindZone windZone;
+	private WindZone windZone;
 	private float altPercent;
-
+	public GameObject fin;
+	private GameObject thisFin;
 
 	void OnDrawGizmos(){
 		Gizmos.DrawSphere(transform.TransformPoint(com), 1);
@@ -16,6 +17,10 @@ public class Bomb : MonoBehaviour {
 	void Start () {
 		rigidbody2D.centerOfMass = com;
 		windZone = GameObject.FindGameObjectWithTag("Wind").GetComponent<Wind>().windZone;
+
+		// create fin if needed
+		thisFin = GameObject.Instantiate(fin,transform.position,Quaternion.identity) as GameObject;
+		thisFin.GetComponent<HingeJoint2D>().connectedBody = rigidbody2D;
 	}
 	
 	void Update (){
