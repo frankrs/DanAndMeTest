@@ -1,42 +1,42 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &100000
+--- !u!1 &134924
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 400000}
-  - 212: {fileID: 21200000}
-  - 60: {fileID: 6000000}
-  - 50: {fileID: 5000000}
-  - 114: {fileID: 11400000}
+  - 4: {fileID: 434924}
+  - 212: {fileID: 21234924}
+  - 60: {fileID: 6034924}
+  - 50: {fileID: 5034924}
+  - 114: {fileID: 11434924}
   m_Layer: 0
-  m_Name: SimpleBomb
+  m_Name: SimpleBombgoboom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &400000
+--- !u!4 &434924
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 134924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 664.400024, y: 67.9000015, z: 0}
+  m_LocalPosition: {x: 356.092285, y: 302.008545, z: 0}
   m_LocalScale: {x: .531946957, y: .531946957, z: .531946957}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5000000
+--- !u!50 &5034924
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 134924}
   m_Mass: 400
   m_LinearDrag: 0
   m_AngularDrag: 0
@@ -46,12 +46,12 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!60 &6000000
+--- !u!60 &6034924
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 134924}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -235,31 +235,31 @@ PolygonCollider2D:
       - {x: -9.55321026, y: -4.00549364}
       - {x: -9.31759262, y: -3.91981483}
       - {x: -8.73925972, y: -3.76987648}
---- !u!114 &11400000
+--- !u!114 &11434924
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 134924}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0d4639a2897fcf44acb0148ecf32cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   com: {x: 5.90999985, y: 0}
-  fin: {fileID: 100000, guid: f919d8ced8af5994c891da0c32b0e96d, type: 2}
+  fin: {fileID: 139956, guid: 8508627c32cf9c44e85b5f434c3f386d, type: 2}
   explosion: {fileID: 131130, guid: be26b9c871b736c4cbc45fed019c766c, type: 2}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   blastRadius: 10
   blastPower: 10
---- !u!212 &21200000
+--- !u!212 &21234924
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 134924}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -285,6 +285,6 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 100000}
+  m_RootGameObject: {fileID: 134924}
   m_IsPrefabParent: 1
   m_IsExploded: 1
