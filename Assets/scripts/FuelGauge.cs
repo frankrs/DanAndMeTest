@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class FuelGauge : MonoBehaviour {
 
 	public Image guage;
-	public float startW;
+	private float startW;
 
 	// Use this for initialization
 	void Start () {
