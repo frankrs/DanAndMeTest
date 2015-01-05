@@ -57,7 +57,8 @@ public class Bomb : MonoBehaviour {
 						// add blast
 						c.gameObject.AddComponent<Rigidbody2D>();
 					}
-					c.rigidbody2D.AddForce((rigidbody2D.centerOfMass - c.rigidbody2D.centerOfMass) * blastPower, ForceMode2D.Impulse);
+					c.rigidbody2D.AddForce(new Vector2(c.transform.position.x - transform.position.x, c.transform.position.y - transform.position.y ) * blastPower, ForceMode2D.Impulse);
+					//c.rigidbody2D.AddTorque(
 				}
 			}
 		}
