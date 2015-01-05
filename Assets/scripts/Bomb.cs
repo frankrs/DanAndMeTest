@@ -48,10 +48,16 @@ public class Bomb : MonoBehaviour {
 		// add blast force
 		if (targets != null){
 			foreach(Collider2D c in targets){
-				// check if has rigidbody
-				if(c.rigidbody2D){
-					// add blast
-					c.rigidbody2D.AddForceAtPosition(new Vector2(blastPower,blastPower),impact,ForceMode2D.Impulse);
+				// ignore untagged objects
+				if (c.tag == "Target"){
+					//detach from paretnts
+					c.transform.parent = null;
+					// check if has rigidbody or add if not
+					if(!c.rigidbody2D){
+						// add blast
+						c.gameObject.AddComponent<Rigidbody2D>();
+					}
+					c.rigidbody2D.AddForce((rigidbody2D.centerOfMass - c.rigidbody2D.centerOfMass) * blastPower, ForceMode2D.Impulse);
 				}
 			}
 		}

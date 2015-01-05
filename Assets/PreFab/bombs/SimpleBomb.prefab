@@ -253,7 +253,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   blastRadius: 10
-  blastPower: 200
+  blastPower: 10
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

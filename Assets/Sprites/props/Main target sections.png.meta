@@ -1,7 +1,27 @@
 fileFormatVersion: 2
 guid: 4aca65bc74e10604d997034f5160d2c9
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Main target sections_0
+    21300002: Main target sections_1
+    21300004: Main target sections_2
+    21300006: Main target sections_3
+    21300008: Main target sections_4
+    21300010: Main target sections_6
+    21300012: Main target sections_7
+    21300014: Main target sections_8
+    21300016: Main target sections_9
+    21300018: Main target sections_10
+    21300020: Main target sections_11
+    21300022: Main target sections_12
+    21300024: Main target sections_13
+    21300026: Main target sections_14
+    21300028: Main target sections_15
+    21300030: Main target sections_16
+    21300032: Main target sections_17
+    21300034: Main target sections_18
+    21300036: Main target sections_19
+    21300038: Main target sections_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,23 +45,223 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Main target sections_0
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2192
+        width: 265
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_1
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 2280
+        width: 190
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_2
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 2126
+        width: 375
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1424
+        width: 600
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_4
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1613
+        width: 446
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_6
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 1499
+        width: 345
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_7
+      rect:
+        serializedVersion: 2
+        x: 3450
+        y: 1653
+        width: 354
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_8
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 1644
+        width: 388
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_9
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 1247
+        width: 106
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_10
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 1265
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_11
+      rect:
+        serializedVersion: 2
+        x: 3998
+        y: 1154
+        width: 481
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_12
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 629
+        width: 503
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_13
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 1048
+        width: 97
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_14
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 528
+        width: 680
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_15
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 307
+        width: 609
+        height: 605
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_16
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 316
+        width: 649
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_17
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 408
+        width: 808
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 99
+        width: 155
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_19
+      rect:
+        serializedVersion: 2
+        x: 4108
+        y: 11
+        width: 239
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Main target sections_19
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1419
+        width: 362
+        height: 433
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
