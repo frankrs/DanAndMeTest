@@ -3205,7 +3205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   guage: {fileID: 503190280}
-  startW: 0
 --- !u!114 &244066436
 MonoBehaviour:
   m_ObjectHideFlags: 0
