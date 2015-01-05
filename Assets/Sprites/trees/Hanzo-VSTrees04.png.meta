@@ -1,12 +1,11 @@
 fileFormatVersion: 2
-guid: 9eb34e445a22a5945ab6dd785938a553
+guid: e5341017e8008604b854f818ccbc3e6f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: grass_0
-    21300002: grass_1
-    21300004: grass_2
-    21300006: grass_3
-    21300008: grass_4
+    21300000: Hanzo-VSTrees04_0
+    21300002: Hanzo-VSTrees04_1
+    21300004: Hanzo-VSTrees04_2
+    21300006: Hanzo-VSTrees04_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,55 +47,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: grass_0
+    - name: Hanzo-VSTrees04_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 189
-        width: 84
-        height: 57
+        x: 14
+        y: 39
+        width: 150
+        height: 201
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 1, w: 0}
-    - name: grass_1
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 189
-        width: 145
-        height: 31
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_2
+    - name: Hanzo-VSTrees04_1
       rect:
         serializedVersion: 2
-        x: 267
-        y: 184
-        width: 138
-        height: 35
+        x: 184
+        y: 40
+        width: 134
+        height: 195
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_3
+    - name: Hanzo-VSTrees04_2
       rect:
         serializedVersion: 2
-        x: 40
-        y: 122
-        width: 92
-        height: 53
+        x: 340
+        y: 32
+        width: 150
+        height: 201
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_4
+    - name: Hanzo-VSTrees04_3
       rect:
         serializedVersion: 2
-        x: 236
-        y: 123
-        width: 156
-        height: 31
+        x: 510
+        y: 33
+        width: 134
+        height: 195
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
