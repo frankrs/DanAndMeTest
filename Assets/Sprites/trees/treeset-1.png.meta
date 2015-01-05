@@ -53,16 +53,6 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: treeset-1_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 896
-        width: 12
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_1
       rect:
         serializedVersion: 2
@@ -71,7 +61,7 @@ TextureImporter:
         width: 165
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_2
       rect:
@@ -81,17 +71,7 @@ TextureImporter:
         width: 184
         height: 267
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: treeset-1_3
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 829
-        width: 13
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_4
       rect:
@@ -101,7 +81,7 @@ TextureImporter:
         width: 200
         height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_5
       rect:
@@ -111,7 +91,7 @@ TextureImporter:
         width: 153
         height: 221
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_6
       rect:
@@ -121,7 +101,7 @@ TextureImporter:
         width: 189
         height: 275
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_7
       rect:
@@ -131,7 +111,7 @@ TextureImporter:
         width: 150
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_8
       rect:
@@ -141,7 +121,7 @@ TextureImporter:
         width: 148
         height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: treeset-1_9
       rect:
@@ -151,7 +131,7 @@ TextureImporter:
         width: 109
         height: 193
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
