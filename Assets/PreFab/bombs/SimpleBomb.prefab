@@ -12,7 +12,7 @@ GameObject:
   - 60: {fileID: 6000000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SimpleBomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,10 +37,17 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
+<<<<<<< HEAD
+  m_Mass: 20
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+=======
   m_Mass: 400
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 3.5
+>>>>>>> 57f51307376e6bfb5b0e69f727cca5334ef7f41a
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -248,12 +255,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   com: {x: 5.90999985, y: 0}
   fin: {fileID: 100000, guid: f919d8ced8af5994c891da0c32b0e96d, type: 2}
+  windInfluence: .100000001
   explosion: {fileID: 131130, guid: be26b9c871b736c4cbc45fed019c766c, type: 2}
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  blastRadius: 10
-  blastPower: 10
+  blastRadius: 80
+  blastPower: 5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

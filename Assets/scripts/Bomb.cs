@@ -7,6 +7,7 @@ public class Bomb : MonoBehaviour {
 	private WindZone windZone;
 	private float altPercent;
 	public GameObject fin;
+	public float windInfluence = .5f;
 	private GameObject thisFin;
 	public GameObject explosion;
 	public LayerMask layerMask;
@@ -34,7 +35,7 @@ public class Bomb : MonoBehaviour {
 	
 	void FixedUpdate () {
 		if(altPercent > 0){
-			rigidbody2D.AddForce(new Vector2((windZone.speedCurve.Evaluate(altPercent)*.5f),0f));
+			rigidbody2D.AddForce(new Vector2((windZone.speedCurve.Evaluate(altPercent)* windInfluence),0f));
 		}
 	}
 
