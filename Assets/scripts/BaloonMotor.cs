@@ -92,7 +92,7 @@ public static class FlightInfo{
 	public static float distanceTraveled;
 	public static float speed;
 	public static float fuel = 100f;
-	public static float health = 100;
+	public static float health = 100f;
 }
 
 
