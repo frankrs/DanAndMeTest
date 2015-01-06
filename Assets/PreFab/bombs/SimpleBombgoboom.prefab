@@ -12,7 +12,7 @@ GameObject:
   - 60: {fileID: 6034924}
   - 50: {fileID: 5034924}
   - 114: {fileID: 11434924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SimpleBombgoboom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   com: {x: 5.90999985, y: 0}
   fin: {fileID: 139956, guid: 8508627c32cf9c44e85b5f434c3f386d, type: 2}
+  windInfluence: .5
   explosion: {fileID: 131130, guid: be26b9c871b736c4cbc45fed019c766c, type: 2}
   layerMask:
     serializedVersion: 2
