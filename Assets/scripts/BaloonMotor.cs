@@ -3,6 +3,11 @@ using System.Collections;
 
 public class BaloonMotor : MonoBehaviour {
 
+
+	public delegate void HitEnemy(float f);
+	public static event HitEnemy OnHitEnemy;
+
+
 	public BaloonControls controls;
 	public Motor motor;
 	public BombBay bombBay;
@@ -34,7 +39,13 @@ public class BaloonMotor : MonoBehaviour {
 		b.rigidbody2D.velocity = gameObject.rigidbody2D.velocity;
 	}
 
-
+	void OnCollisionEnter2D (Collision2D col){
+		DontHit dh = col.collider.GetComponent<DontHit>();
+		if (dh != null){
+			OnHitEnemy(dh.damage);
+			dh.Die ();
+		}
+	}
 
 
 
@@ -81,6 +92,7 @@ public static class FlightInfo{
 	public static float distanceTraveled;
 	public static float speed;
 	public static float fuel = 100f;
+	public static float health = 100;
 }
 
 
