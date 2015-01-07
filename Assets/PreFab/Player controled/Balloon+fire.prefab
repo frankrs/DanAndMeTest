@@ -339,7 +339,7 @@ MonoBehaviour:
     bomb: 0
   motor:
     gasPower: 1500
-    burnRate: 18
+    burnRate: 10
   bombBay:
     loadedBomb: {fileID: 134924, guid: 80967310b10afda41bbcdf613d1b1c38, type: 2}
 --- !u!198 &19805100
