@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5341017e8008604b854f818ccbc3e6f
+guid: bfec35e6ab7a865449463a7ebd1e80ed
 TextureImporter:
   fileIDToRecycleName:
     21300000: Hanzo-VSTrees04_0
@@ -41,7 +41,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
